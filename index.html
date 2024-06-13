@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hustle Data</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>  
     <script id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
-    
 </head>
 <body class="light-mode">
     <div class="theme-switcher">
@@ -21,10 +21,10 @@
     <div id="nav" class="light-mode">
         <h2><a href="https://www.yourwebsite.com" style="text-decoration: none; color: inherit;">Sudhanshu Mukherjee</a></h2>
         <div class="home-link" onclick="showHomePage()">Home</div>
-        <a href="#" onclick="loadModule(0)">Projects</a>
-        <a href="#" onclick="loadModule(1)">Blog</a>
-        <a href="#" onclick="loadModule(2)">Archives</a>
-        <a href="https://neokai.streamlit.app/" target="_blank">R.I.D.E.(Rapid Insightsa Data Engine)</a>
+        <a href="#" data-module="0">Projects</a>
+        <a href="#" data-module="1">Blog</a>
+        <a href="#" data-module="2">Archives</a>
+        <a href="https://neokai.streamlit.app/" target="_blank">R.I.D.E.(Rapid Insights Data Engine)</a>
     </div>
     <div id="content">
         <h1>Sudhanshu Mukherjee</h1>
@@ -32,25 +32,23 @@
         <p></p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]  // Make sure to handle double dollar signs
-    },
-    startup: {
-      ready: () => {
-        console.log('MathJax is ready');
-        MathJax.startup.defaultReady();
-      }
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        startup: {
+          ready: () => {
+            console.log('MathJax is ready');
+            MathJax.startup.defaultReady();
+          }
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
     <script src="scripts.js"></script>
 </body>
 </html>
