@@ -15,7 +15,7 @@ I'm pursuing my Master's in Data Science from the [University of Massachusetts](
 
 I write blogs, vlog personal moments, and create YouTube videos. The previous line is directly proportional to Time, Mood, and Creativity.
 
-I'm active on [LinkedIn](https://www.linkedin.com/in/sudhanshumukherjeexx/) and [GitHub](https://github.com/sudhanshumukherjeexx) and aspire to become a Tech Influencer. You can reach me via [email]().</p>
+I'm active on [LinkedIn](https://www.linkedin.com/in/sudhanshumukherjeexx/) and [GitHub](https://github.com/sudhanshumukherjeexx) and aspire to become a Tech Influencer. You can reach me via [Email](mailto:sudhanshumukherjeexx@gmail.com).</p>
     </div>
 </div>
 
