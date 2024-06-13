@@ -6,10 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
     loadHomePage();
-    document.querySelectorAll('#nav a').forEach((link, index) => {
+    document.querySelectorAll('#nav a[data-module]').forEach((link) => {
+        const moduleIndex = parseInt(link.getAttribute('data-module'));
         link.addEventListener('click', () => {
-            loadModule(index);
-            currentModuleIndex = index;
+            loadModule(moduleIndex);
+            currentModuleIndex = moduleIndex;
             updateActiveLink();
         });
     });
@@ -24,8 +25,6 @@ function updateContent(text) {
         })
         .catch((err) => console.error('MathJax typesetting failed:', err));
 }
-
-
 
 function loadHomePage() {
     const noCache = new Date().getTime(); // Cache-busting timestamp
@@ -64,9 +63,8 @@ function loadModule(index) {
         });
 }
 
-
 function updateActiveLink() {
-    const links = document.querySelectorAll('#nav a');
+    const links = document.querySelectorAll('#nav a[data-module]');
     links.forEach(link => link.classList.remove('active-link'));
     if (currentModuleIndex >= 0) {
         links[currentModuleIndex].classList.add('active-link');
