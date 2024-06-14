@@ -7,7 +7,7 @@
 
 ### Hello, Legends 🚀
 
-I'm Sudhanshu Mukherjee, an entrepreneur at heart and a Data Scientist from Nagpur, [The Tiger Capital of India](https://www.pridehotel.com/blog/nagpur---tiger-capital-of-india.html). 
+I'm Sudhanshu Mukherjee, an entrepreneur at heart and a Data Scientist from [Nagpur, The Tiger Capital of India](https://www.pridehotel.com/blog/nagpur---tiger-capital-of-india.html). 
 
 I am currently building a platform called [R.I.D.E](https://neokai.streamlit.app/), that lets you do rapid data prototyping with just a few clicks. Upload your dataset, explore multifaceted data analytics, visualize trends, and leverage machine learning, all backed by the power of AI and a No-Code environment.
 

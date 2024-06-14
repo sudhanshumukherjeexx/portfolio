@@ -1,139 +1,166 @@
-html, body { 
-    height: 100%; 
-    margin: 0; 
-    padding: 0; 
-    overflow-x: hidden; /* changed from 'hidden' to 'x' to allow vertical scrolling */
-}
-body, h1, h2, h3 { 
-    display: flex; 
-    flex-direction: column; /* makes sure content is stacked vertically on smaller screens */
-    font-family: 'Arial', sans-serif; 
-    transition: background-color 0.3s, color 0.3s; 
-}
-body.light-mode { 
-    background-color: #ffffff; 
-    color: #000000; 
-}
-body.dark-mode { 
-    background-color: #121212; 
-    color: #ffffff; 
-}
-#nav { 
-    width: 100%; /* full width on small screens */
-    padding: 20px; 
-    box-sizing: border-box; 
-    background-color: #1c1c1c; 
-    position: fixed; 
-    top: 0; 
-    bottom: 0; 
-    overflow-y: auto; 
-    transition: background-color 0.3s; 
-    z-index: 1000; /* ensures the nav is on top */
-}
-#nav.light-mode { 
-    background-color: #f4f4f4; 
-    color: black; 
-}
-#nav.dark-mode { 
-    background-color: #1c1c1c; 
-    color: white; 
-}
-#content { 
-    flex-grow: 1; 
-    padding: 20px; 
-    margin-top: 120px; /* adjusted margin to top */
-    overflow-y: auto; 
-    height: calc(100vh - 120px); /* adjusted height calculation */
-}
-#nav a, #nav .home-link { 
-    display: block; 
-    margin-bottom: 10px; 
-    text-decoration: none; 
-    color: inherit; 
-    cursor: pointer; 
-}
-#nav a:hover, #nav .home-link:hover { 
-    text-decoration: underline; 
-}
-h1, h2, p { 
-    margin: 0 0 20px 0; 
-}
-.module-navigation { 
-    display: flex; 
-    justify-content: space-between; 
-    margin-top: 20px; 
-}
-.button { 
-    padding: 10px 20px; 
-    color: white; 
-    background-color: #007bff; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-}
-.button:hover { 
-    background-color: #0056b3; 
-}
-.theme-switcher { 
-    position: fixed; 
-    top: 10px; 
-    right: 40px; 
-    z-index: 1000; 
-}
-.switch { 
-    position: relative; 
-    display: inline-block; 
-    width: 60px; 
-    height: 34px; 
-}
-.switch input { 
-    opacity: 0; 
-    width: 0; 
-    height: 0; 
-}
-.slider { 
-    position: absolute; 
-    cursor: pointer; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    background-color: #ccc; 
-    transition: .4s; 
-    border-radius: 34px; 
-}
-.slider:before { 
-    position: absolute; 
-    content: ""; 
-    height: 26px; 
-    width: 26px; 
-    left: 4px; 
-    bottom: 4px; 
-    background-color: white; 
-    transition: .4s; 
-    border-radius: 50%; 
-}
-input:checked + .slider { 
-    background-color: #2196F3; 
-}
-input:checked + .slider:before { 
-    transform: translateX(26px); 
-}
-.active-link { 
-    color: #ff4500; 
-    font-weight: bold; 
+/* General Resets and Basics */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Media Queries */
+body, h1, h2, h3 {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme Handling */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navigation Styles */
+#nav {
+    width: 100%; /* Full width on smaller screens */
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start hidden off-screen */
+    overflow-y: auto;
+    transition: left 0.3s; /* Smooth slide in effect */
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 20px; /* Uniform padding */
+    box-sizing: border-box; /* Helps manage padding and width calculation */
+}
+
+#nav.light-mode {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+#nav.dark-mode {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+/* Content Styles */
+#content {
+    flex-grow: 1;
+    padding: 20px 20px 80px 20px; /* Adjusted padding for better spacing */
+    margin-left: 0; /* No margin by default */
+    overflow-y: auto;
+    height: calc(100vh - 80px); /* Adjusted height for proper display */
+}
+
+/* Responsive Design Adjustments */
 @media (min-width: 768px) {
-    #nav { 
-        width: 20%; /* sidebar width on larger screens */
-        top: 0;
-        bottom: 0;
-        margin-left: 0; /* reset any left margin */
+    #nav {
+        width: 20%; /* Sidebar width on larger screens */
+        left: 0; /* Always visible */
     }
-    #content { 
-        margin-left: 20%; /* ensure content is pushed aside by sidebar */
-        margin-top: 0; /* reset top margin */
+    #content {
+        margin-left: 20%; /* Make space for the sidebar */
     }
+}
+
+/* Link Styles */
+#nav a, #nav .home-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+#nav a:hover, #nav .home-link:hover {
+    text-decoration: underline;
+}
+
+/* Typography and Spacing */
+h1, h2, p {
+    margin: 0 0 20px 0;
+}
+
+/* Navigation and Buttons */
+.module-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    position: fixed;
+    top: 10px;
+    right: 40px;
+    z-index: 1000;
+}
+
+/* Custom Switch Design */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.active-link {
+    color: #ff4500;
+    font-weight: bold;
 }
