@@ -83,6 +83,16 @@ function generateNavigationButtons(index) {
     return buttons;
 }
 
+function toggleNav() {
+    var nav = document.getElementById('nav');
+    if (nav.style.left === '0px') {
+        nav.style.left = '-100%'; // Hide the navigation
+    } else {
+        nav.style.left = '0px'; // Show the navigation
+    }
+}
+
+
 function toggleTheme() {
     const body = document.body;
     const nav = document.getElementById('nav');
