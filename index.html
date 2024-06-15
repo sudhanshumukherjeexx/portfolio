@@ -39,6 +39,23 @@
         <p></p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        startup: {
+          ready: () => {
+            console.log('MathJax is ready');
+            MathJax.startup.defaultReady();
+          }
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
     <script src="scripts.js"></script>
 </body>
 </html>

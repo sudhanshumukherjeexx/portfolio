@@ -38,7 +38,7 @@ function loadHomePage() {
         .then(text => updateContent(text))
         .catch(err => {
             console.error("Error Fetching Home Markdown:", err);
-            document.getElementById('content').innerHTML = '<p>Error loading the home content.</p>';
+            document.getElementById('content').innerHTML = '<p>JavaScript Bruh.. Can you please reload the page? Error loading the home content.</p>';
         });
     currentModuleIndex = -1;
     updateActiveLink();
