@@ -13,7 +13,12 @@
 </head>
 <body class="light-mode">
     <!-- Menu Button -->
-    <button onclick="toggleNav()" style="position: fixed; top: 10px; left: 10px; z-index: 1001;">Menu</button>
+    <div id="hamburger-icon" onclick="toggleNav()" style="position: fixed; top: 10px; left: 10px; z-index: 1001; cursor: pointer;">
+      <div style="width: 30px; height: 3px; background-color: black; margin: 6px 0;"></div>
+      <div style="width: 30px; height: 3px; background-color: black; margin: 6px 0;"></div>
+      <div style="width: 30px; height: 3px; background-color: black; margin: 6px 0;"></div>
+  </div>
+  
     <div class="theme-switcher">
         <label class="switch">
             <input type="checkbox" onclick="toggleTheme()">

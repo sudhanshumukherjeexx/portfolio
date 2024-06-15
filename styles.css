@@ -1,4 +1,4 @@
-/* General Resets and Basics */
+/* Base Styles */
 html, body {
     height: 100%;
     margin: 0;
@@ -13,7 +13,6 @@ body, h1, h2, h3 {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Theme Handling */
 body.light-mode {
     background-color: #ffffff;
     color: #000000;
@@ -57,18 +56,50 @@ body.dark-mode {
     height: calc(100vh - 80px); /* Adjusted height for proper display */
 }
 
-/* Responsive Design Adjustments */
+/* Hamburger Icon Style */
+#hamburger-icon {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #hamburger-icon {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    #nav {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    #content {
+        margin-left: 0; /* Content takes full width when nav is hidden */
+    }
+}
+
 @media (min-width: 768px) {
     #nav {
         width: 20%; /* Sidebar width on larger screens */
         left: 0; /* Always visible */
     }
+
     #content {
         margin-left: 20%; /* Make space for the sidebar */
     }
 }
 
-/* Link Styles */
+/* Additional Styles for Links and Interaction */
 #nav a, #nav .home-link {
     display: block;
     margin-bottom: 10px;
@@ -163,4 +194,42 @@ input:checked + .slider:before {
 .active-link {
     color: #ff4500;
     font-weight: bold;
+}
+
+
+
+.profile-container {
+    display: flex;
+    align-items: center; /* Ensures vertical center alignment */
+    justify-content: center; /* Centers horizontally */
+    gap: 10px;
+    flex-direction: column; /* Default to stacking vertically on mobile */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures the image is never wider than its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Ensures the image is round */
+    display: block; /* Removes additional space below the image */
+}
+
+.text-container p {
+    margin: 0; /* Removes default paragraph margins */
+}
+
+@media (min-width: 768px) {
+    .profile-container {
+        flex-direction: row; /* Side by side on larger screens */
+        align-items: start; /* Aligns items to the top of the container */
+    }
+
+    .image-container {
+        flex: 0 0 auto; /* Does not grow or shrink, stays at its content size */
+        width: 30%; /* Sets a fixed percentage width for the image container */
+    }
+
+    .text-container {
+        flex: 1; /* Allows the text container to fill the remaining space */
+        padding: 0 15px; /* Adds some padding around the text */
+    }
 }
