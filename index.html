@@ -3,67 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hustle Data</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>  
-    <script id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-        onload="MathJax.startup.defaultReady();">
-    </script>
+    <title>Sudhanshu Mukherjee - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/mario.ico">
 </head>
-<body class="light-mode">
-    <!-- Menu Button -->
-    <div id="hamburger-icon" onclick="toggleNav()" style="position: fixed; top: 10px; left: 10px; z-index: 1001; cursor: pointer;">
-      <div style="width: 30px; height: 3px; background-color: black; margin: 6px 0;"></div>
-      <div style="width: 30px; height: 3px; background-color: black; margin: 6px 0;"></div>
-      <div style="width: 30px; height: 3px; background-color: black; margin: 6px 0;"></div>
-  </div>
-  
-    <div class="theme-switcher">
-        <label class="switch">
-            <input type="checkbox" onclick="toggleTheme()">
-            <span class="slider"></span>
-        </label>
-    </div>
-    <div id="nav" class="light-mode">
-        <!-- <h2><a href="http://www.hustledata.io" style="text-decoration: none; color: inherit;">Sudhanshu Mukherjee</a></h2> -->
-        <br>
-        <h2>
-          <a href="http://www.sudhanshumukherjee.com" style="text-decoration: none;">
-              <img src="./images/mario.png" alt="Sudhanshu Mukherjee Icon" style="width: 40px; height: 40px;">
-          </a>
-        </h2>
-        <div class="home-link" onclick="showHomePage()">Home</div>
-        <a href="#" data-module="0">My Projects</a>
-        <a href="#" data-module="1">My Blog</a>
-        <a href="#" data-module="2">Archives</a>
-        <a href="https://neokai.streamlit.app/" target="_blank">R.I.D.E.(Rapid Insights Data Engine)</a>
-    </div>
-    <div id="content">
-        <h1>Sudhanshu Mukherjee</h1>
-        <p></p>
-        <p></p>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']]
-        },
-        startup: {
-          ready: () => {
-            console.log('MathJax is ready');
-            MathJax.startup.defaultReady();
-          }
-        },
-        svg: {
-          fontCache: 'global'
-        }
-      };
-    </script>
-    <script src="scripts.js"></script>
+<body>
+    <nav class="fixed-nav">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pages/projects.html" target="_blank">Projects</a>
+                <a href="pages/blogs.html" target="_blank">Blogs</a>
+                <a href="pages/archives.html" target="_blank">Archives</a>
+            </div>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="profile-container">
+            <!-- <div class="image-container">
+                <img src="./images/Image_Editor.jpeg" alt="Sudhanshu Mukherjee">
+            </div> -->
+            <div class="text-container">
+                <p>Hello, Legends! I'm Sudhanshu Mukherjee 🧘‍♂️</p>
+
+                <p>
+                    I'm a Data Scientist and entrepreneur building at the intersection of No-Code, AI and data. 
+                    Currently pursuing my MS in Data Science at <a href="https://www.umassd.edu/">UMass Dartmouth</a>, I split my time between teaching 
+                    High-Performance Computing, developing R.I.D.E (a no-code data analysis platform), and growing 
+                    Hustle Data – a budding initiative for the Machine learning and Data Science community.
+                </p>
+                
+                <p>
+                    My journey spans from Nagpur, India (<a href="https://www.pridehotel.com/blog/nagpur---tiger-capital-of-india.html">the Tiger Capital</a>) 
+                    to Boston, Massachusetts, where I live my passion for data science with teaching and open-source development. 
+                    I maintain an open-source package called <a href="https://github.com/sudhanshumukherjeexx/prepup-linux" target="_blank"><i>Prepup-Linux</i></a> (i.e) my terminal-based data preprocessing tool. 
+                    I occasionally write blogs through my substack newsletter <a href="https://hustledata.substack.com/" target="_blank"><i>Hustle Data</i></a> 
+                    and post videos on YouTube about data science. The previous statement is directly proportional to my <i>Time</i> and <i>Mood</i>.
+                </p>
+                <p>
+                    When I'm not coding or teaching, you'll find me gaming, watching movies, or attempting to finish my reading list. 
+                    My long-term dream? I aspire to become a Teacher when I retire.
+                </p>
+                <p>
+                    Let's connect on <a href="https://www.linkedin.com/in/sudhanshumukherjeexx/"><b>LinkedIn</b></a> or check out my projects on <a href="https://github.com/sudhanshumukherjeexx"><b>GitHub</b></a>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <!-- Your social links here -->
+            <div class="social-link">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:sud@hustledata.io">sud@hustledata.io</a>
+            </div>
+            <div class="social-link">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/sudhanshumukherjeexx" target="_blank">sudhanshumukherjeexx</a>
+            </div>
+            <div class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+                <a href="https://linkedin.com/in/sudhanshumukherjeexx/" target="_blank">sudhanshumukherjeexx</a>
+            </div>
+            <div class="social-link">
+                <i class="fas fa-bolt"></i>
+                <a href="https://hustledata.substack.com/" target="_blank">substack</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

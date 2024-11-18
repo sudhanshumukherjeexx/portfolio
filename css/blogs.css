@@ -1,0 +1,94 @@
+/* blogs.css */
+.blog-header {
+    text-align: center;
+    margin: 2rem 0 4rem;
+    padding: 0 1rem;
+}
+
+.blog-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.blog-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.blog-post {
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+.blog-post:hover {
+    transform: translateX(10px);
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.blog-post p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.read-more i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+    opacity: 0.8;
+}
+
+.read-more:hover i {
+    transform: translateX(4px);
+}
+
+/* Ensure proper spacing with fixed nav */
+main.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-header h1 {
+        font-size: 2rem;
+    }
+
+    .blog-post {
+        padding: 1.5rem 0;
+    }
+
+    .blog-post h2 {
+        font-size: 1.3rem;
+    }
+}

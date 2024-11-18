@@ -1,0 +1,96 @@
+/* archives.css */
+.archives-header {
+    text-align: center;
+    margin: 2rem 0 4rem;
+    padding: 0 1rem;
+}
+
+.archives-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.archives-header p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.archives-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.archive-section {
+    margin-bottom: 3rem;
+}
+
+.archive-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.archive-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.archive-item {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    padding: 0.5rem 0;
+    transition: transform 0.3s ease;
+}
+
+.archive-item:hover {
+    transform: translateX(10px);
+}
+
+.archive-date {
+    min-width: 120px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.archive-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: opacity 0.3s ease;
+}
+
+.archive-link:hover {
+    opacity: 0.8;
+}
+
+/* Ensure proper spacing with fixed nav */
+main.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .archives-header h1 {
+        font-size: 2rem;
+    }
+
+    .archive-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .archive-date {
+        min-width: auto;
+        opacity: 0.6;
+    }
+
+    .archive-section h2 {
+        font-size: 1.5rem;
+    }
+}

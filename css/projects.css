@@ -1,0 +1,339 @@
+/*projects.css*/
+/* .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: inherit;
+}
+
+.project-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    background: rgba(100, 181, 246, 0.2);
+    color: inherit;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: rgba(100, 181, 246, 0.3);
+}
+
+
+body.dark-theme .project-card {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .tags span {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .project-header img {
+        height: 150px;
+    }
+}
+
+
+main.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+} */
+
+
+/* .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: inherit;
+}
+
+.project-header img {
+    width: 100%;
+    height: auto; 
+    max-height: 300px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.1); 
+    padding: 0.5rem; 
+}
+
+.project-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 3rem); 
+}
+
+.project-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1; 
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto; 
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    background: rgba(100, 181, 246, 0.2);
+    color: inherit;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: rgba(100, 181, 246, 0.3);
+}
+
+
+body.dark-theme .project-card {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .tags span {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .project-header img {
+        max-height: 200px; 
+    }
+}
+
+
+main.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+} */
+
+/* projects.css */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: inherit;
+}
+
+.project-header img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+}
+
+.project-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    background: rgba(100, 181, 246, 0.2);
+    color: inherit;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: rgba(100, 181, 246, 0.3);
+}
+
+/* Dark theme specific styles */
+body.dark-theme .project-card {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme .tags span {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .project-header img {
+        max-height: 200px;
+    }
+}
+
+/* Ensure proper spacing with fixed nav */
+main.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
