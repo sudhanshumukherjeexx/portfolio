@@ -567,3 +567,174 @@ footer .social-link:hover a {
         padding: 1.25rem;
     }
 }
+
+
+.resume-wrapper {
+    margin-left: 2rem;
+    z-index: 1001;
+}
+
+.button-85 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #1a1a1a;  /* Matched to your website background */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;  /* Matched to your website background */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.button-85 i {
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .resume-wrapper {
+        margin: 0.5rem 0 0 0;
+    }
+    
+    .button-85 {
+        padding: 0.5em 1.5em;
+        font-size: 13px;
+    }
+}
+
+
+/* Add this to your CSS to change default link colors */
+a {
+    color: #FF6B35;  /* Orange color */
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* If you want to keep certain links in their original colors, you can override */
+.nav-links a {
+    color: var(--text);  /* Keep navigation links white */
+}
+
+/*
+footer .social-link a {
+    color: #A0A0A0;  /* Keep footer links grey 
+}
+*/
+
+/* Footer styles */
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+footer .social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer .social-link i {
+    color: #FF6B35;  /* Changed to orange */
+}
+
+footer .social-link a {
+    color: #FF6B35;  /* Changed to orange */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+footer .social-link:hover i,
+footer .social-link:hover a {
+    opacity: 0.8;
+}
+
+/* Responsive styles for footer */
+@media (max-width: 480px) {
+    footer .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.name-highlight {
+    color: #4CAF50;  /* A nice material green color */
+}
+
+/* Keep the rest of the title styling the same */
+.text-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
