@@ -378,7 +378,7 @@ footer .social-link:hover a {
 }
 
 .highlight {
-    color: #4A9EFF;
+    color: #FF6B35;
 }
 
 .project-description {
@@ -521,7 +521,7 @@ footer .social-link:hover a {
 }
 
 .blog-category {
-    color: #4A9EFF;
+    color: #FF6B35;
     font-size: 0.9rem;
 }
 
@@ -538,7 +538,7 @@ footer .social-link:hover a {
 }
 
 .blog-title a:hover {
-    color: #4A9EFF;
+    color: #FF6B35;
 }
 
 .blog-excerpt {
@@ -665,7 +665,7 @@ footer .social-link:hover a {
 
 /* Add this to your CSS to change default link colors */
 a {
-    color: #FF6B35;  /* Orange color */
+    color: #e6007a;  /* Orange color */
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
@@ -703,11 +703,11 @@ footer .social-link {
 }
 
 footer .social-link i {
-    color: #FF6B35;  /* Changed to orange */
+    color: #e6007a;  /* Changed to orange */
 }
 
 footer .social-link a {
-    color: #FF6B35;  /* Changed to orange */
+    color: #e6007a;  /* Changed to orange */
     text-decoration: none;
     font-size: 0.9rem;
     transition: opacity 0.3s ease;
@@ -728,7 +728,7 @@ footer .social-link:hover a {
 }
 
 .name-highlight {
-    color: #4CAF50;  /* A nice material green color */
+    color: #e6007a;  /* #FF6B35; #4CAF50; A nice material green color */
 }
 
 /* Keep the rest of the title styling the same */
