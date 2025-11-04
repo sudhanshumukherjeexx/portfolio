@@ -7,7 +7,10 @@
     --dark-bg: #1a1a1a;
     --dark-text: #ffffff;
     --light-bg: #ffffff;
-    --light-text: #1a1a1a;
+    --light-text: #2d3436;
+    --text-primary: #2d3436;
+    --text-secondary: #4a4a4a;
+    --text-muted: #6c757d;
 }
 
 /* Reset styles */
@@ -28,8 +31,8 @@ body {
     padding-top: var(--nav-total-height);
     padding-bottom: calc(var(--footer-height) + 1rem);
     width: 100%;
-    background-color: var(--dark-bg);
-    color: var(--dark-text);
+    background-color: var(--light-bg);
+    color: var(--light-text);
 }
 
 /* Navigation styles */
@@ -122,7 +125,7 @@ body {
 }
 
 .bengali-text {
-    color: #A0A0A0;
+    color: #4a4a4a;
     margin-left: 0.5rem;
     font-weight: normal;
 }
@@ -130,19 +133,19 @@ body {
 .text-container .title {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: #A0A0A0;
+    color: #333333;
 }
 
 .text-container .contact-info {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    color: #A0A0A0;
+    color: #333333;
 }
 
 .text-container .quote {
     font-size: 1rem;
     margin-bottom: 1rem;
-    color: #D3D3D3;
+    color: #4a4a4a;
 }
 
 .text-container .social-links {
@@ -152,12 +155,12 @@ body {
 }
 
 .text-container .social-links a {
-    color: #A0A0A0;
+    color: #e6007a;
     transition: color 0.3s ease;
 }
 
 .text-container .social-links a:hover {
-    color: #ffffff;
+    color: #cc0066;
 }
 
 /* About section styles */
@@ -177,7 +180,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    color: #D3D3D3;
+    color: #333333;
 }
 
 .hidden-content {
@@ -193,8 +196,8 @@ body {
 
 .read-more-btn {
     background: transparent;
-    border: 1px solid #D3D3D3;
-    color: #D3D3D3;
+    border: 1px solid #4a4a4a;
+    color: #333333;
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
     cursor: pointer;
@@ -394,13 +397,23 @@ footer .social-link:hover a {
 }
 
 .project-links a {
-    color: #4A9EFF;
+    color: #ffffff;
     text-decoration: none;
-    transition: opacity 0.3s ease;
+    background: #e6007a;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
 .project-links a:hover {
-    opacity: 0.8;
+    background: #cc0066;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(230, 0, 122, 0.2);
 }
 
 /* Responsive adjustments */
