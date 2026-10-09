@@ -46,7 +46,8 @@ const FAVICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -19 134 134
 async function main() {
   const cssSource = await readFile(out('src/styles/site.css'), 'utf8');
   const css = minifyCss(cssSource);
-  const js = await readFile(out('src/scripts/site.js'), 'utf8');
+  // Normalize line endings so the cache-busting hash is the same on every OS.
+  const js = (await readFile(out('src/scripts/site.js'), 'utf8')).replace(/\r\n/g, '\n');
   const assets = {
     css: `/assets/css/site.css?v=${hash(css)}`,
     js: `/assets/js/site.js?v=${hash(js)}`,
