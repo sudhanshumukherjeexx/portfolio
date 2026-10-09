@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Writing · Sudhanshu Mukherjee</title>
+<meta name="description" content="Articles by Sudhanshu Mukherjee on machine learning, data science, SQL and Python engineering, from the Hustle Data newsletter.">
+<link rel="canonical" href="https://www.sudhanshumukherjee.com/writing/">
+<meta name="author" content="Sudhanshu Mukherjee">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FAF9F6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sudhanshu Mukherjee">
+<meta property="og:title" content="Writing · Sudhanshu Mukherjee">
+<meta property="og:description" content="Articles by Sudhanshu Mukherjee on machine learning, data science, SQL and Python engineering, from the Hustle Data newsletter.">
+<meta property="og:url" content="https://www.sudhanshumukherjee.com/writing/">
+<meta property="og:image" content="https://www.sudhanshumukherjee.com/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sudhanshu Mukherjee — data scientist and AI/ML engineer, with Bit, the site’s pixel mascot">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css?v=cf18e0eaca">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(localStorage.getItem('bit')==='off')d.classList.add('bit-off')}catch(e){}})();</script>
+<script src="/assets/js/site.js?v=9107f3e18f" defer></script>
+
+</head>
+<body class="">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="Sudhanshu Mukherjee, home">
+      <span class="brand__mark" aria-hidden="true"><svg class="bit bit--mark" viewBox="0 0 130 96" aria-hidden="true" focusable="false" data-state="idle" shape-rendering="crispEdges">
+  <g class="bit__bob">
+    <g class="bit__legs">
+      <rect class="bit__leg bit__leg--a" x="15" y="68" width="10" height="27"/>
+      <rect class="bit__leg bit__leg--b" x="35" y="68" width="10" height="27"/>
+      <rect class="bit__leg bit__leg--a" x="85" y="68" width="10" height="27"/>
+      <rect class="bit__leg bit__leg--b" x="105" y="68" width="10" height="27"/>
+    </g>
+    <rect class="bit__arm bit__arm--l" x="1" y="23" width="15" height="27"/>
+    <rect class="bit__arm bit__arm--r" x="114" y="23" width="15" height="27"/>
+    <rect class="bit__body" x="15" y="0" width="100" height="70"/>
+    <g class="bit__open">
+      <g class="bit__eyes">
+        <rect class="bit__eye" x="25" y="24" width="10" height="12"/>
+        <rect class="bit__eye" x="95" y="24" width="10" height="12"/>
+      </g>
+    </g>
+    <g class="bit__closed">
+      <rect x="23" y="32" width="14" height="4"/>
+      <rect x="93" y="32" width="14" height="4"/>
+    </g>
+    <g class="bit__zzz">
+      <path d="M120 -22h10v3l-7 7h7v3h-10v-3l7-7h-7z"/>
+      <path d="M134 -34h7v2l-5 5h5v2h-7v-2l5-5h-5z"/>
+    </g>
+  </g>
+</svg></span>
+      <span class="brand__name">Sudhanshu<span class="brand__last"> Mukherjee</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list"><li><a class="nav__link" href="/">Home</a></li><li><a class="nav__link" href="/work/">Work</a></li><li><a class="nav__link" href="/about/">About</a></li><li><a class="nav__link" href="/writing/" aria-current="page">Writing</a></li><li><a class="nav__link" href="/pages/sudhanshu_mukherjee_resume.pdf">Resume<span class="visually-hidden"> (PDF)</span></a></li></ul>
+    </nav>
+    <div class="site-header__tools">
+      <a class="btn btn--small btn--ghost nav-cta" href="#contact">Say hello</a>
+      
+  <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to dark theme">
+    <span class="theme-icon theme-icon--sun"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span><span class="theme-icon theme-icon--moon"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span>
+  </button>
+  <button class="icon-btn bit-toggle" type="button" data-bit-toggle aria-pressed="true" aria-label="Bit, the animated mascot" title="Bit, the animated mascot">
+    <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 5h12v10H6z"/><path d="M6 9H3.5v3.5H6M18 9h2.5v3.5H18"/><path d="M7 15v4M10 15v4M14 15v4M17 15v4"/><path d="M8.5 8.5h1.5v2H8.5zM14 8.5h1.5v2H14z" fill="currentColor"/></svg>
+  </button>
+      <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" data-menu-button>
+        <span class="menu-btn__open"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg></span><span class="menu-btn__close"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+    </div>
+  </div>
+  <nav class="mnav" id="mobile-nav" aria-label="Primary" hidden data-menu>
+    <ul class="mnav__list container"><li><a class="mnav__link" href="/">Home</a></li><li><a class="mnav__link" href="/work/">Work</a></li><li><a class="mnav__link" href="/about/">About</a></li><li><a class="mnav__link" href="/writing/" aria-current="page">Writing</a></li><li><a class="mnav__link" href="/pages/sudhanshu_mukherjee_resume.pdf">Resume<span class="visually-hidden"> (PDF)</span></a></li>
+      <li><a class="mnav__link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main" tabindex="-1">
+
+<header class="page-head">
+  <div class="container narrow">
+    <p class="eyebrow">Writing</p>
+    <h1 class="page-title">Notes on data, models and building</h1>
+    <p class="page-lead">I write <a href="https://hustledata.substack.com/" rel="noopener">Hustle Data</a>, a newsletter of tutorials, competition write-ups and engineering practice. Articles open on Substack.</p>
+    <p><a class="btn btn--ghost btn--small" href="https://hustledata.substack.com/" rel="noopener"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>Subscribe on Substack</a></p>
+  </div>
+</header>
+
+<section class="section section--tight" aria-label="Articles">
+  <div class="container narrow">
+    
+      <div class="year-group">
+        <p class="year-group__year" aria-hidden="true">2025</p>
+        <ol class="posts" aria-label="Articles from 2025">
+    <li class="post">
+      <p class="post__meta"><time datetime="2025-02-14">Feb 14, 2025</time><span aria-hidden="true">·</span><span>Data Science</span><span aria-hidden="true">·</span><span>3 min read</span></p>
+      <h2 class="post__title"><a class="post__link" href="https://hustledata.substack.com/p/20-sql-commands-for-your-next-data" rel="noopener">20 SQL Commands For Your Next Data Science Job<svg class="icon post__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></h2>
+      <p class="post__excerpt">The SQL you are most likely to be asked about in a data science interview, one command at a time.</p>
+    </li></ol>
+      </div>
+      <div class="year-group">
+        <p class="year-group__year" aria-hidden="true">2024</p>
+        <ol class="posts" aria-label="Articles from 2024">
+    <li class="post">
+      <p class="post__meta"><time datetime="2024-11-18">Nov 18, 2024</time><span aria-hidden="true">·</span><span>Machine Learning</span><span aria-hidden="true">·</span><span>3 min read</span></p>
+      <h2 class="post__title"><a class="post__link" href="https://hustledata.substack.com/p/how-to-evaluate-machine-learning" rel="noopener">How to Evaluate Machine Learning Models using Classification Metrics: ROC, AUC, Precision, Recall, and Beyond<svg class="icon post__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></h2>
+      <p class="post__excerpt">What each classification metric actually measures, with reusable code for every one of them.</p>
+    </li></ol>
+      </div>
+      <div class="year-group">
+        <p class="year-group__year" aria-hidden="true">2023</p>
+        <ol class="posts" aria-label="Articles from 2023">
+    <li class="post">
+      <p class="post__meta"><time datetime="2023-10-25">Oct 25, 2023</time><span aria-hidden="true">·</span><span>Machine Learning</span><span aria-hidden="true">·</span><span>4 min read</span></p>
+      <h2 class="post__title"><a class="post__link" href="https://hustledata.substack.com/p/deep-learning-is-all-about-gradient" rel="noopener">Deep Learning is all about Gradient Descent Algorithm<svg class="icon post__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></h2>
+      <p class="post__excerpt">Backpropagation, gradient descent and stochastic gradient descent, and how they drive learning in neural networks.</p>
+    </li>
+    <li class="post">
+      <p class="post__meta"><time datetime="2023-07-27">Jul 27, 2023</time><span aria-hidden="true">·</span><span>Tutorials</span><span aria-hidden="true">·</span><span>8 min read</span></p>
+      <h2 class="post__title"><a class="post__link" href="https://hustledata.substack.com/p/multiclass-classification-using-neural" rel="noopener">Multiclass Classification using Neural Networks<svg class="icon post__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></h2>
+      <p class="post__excerpt">Predicting La Liga match outcomes (win, draw, loss) with a neural network built in PyTorch.</p>
+    </li>
+    <li class="post">
+      <p class="post__meta"><time datetime="2023-07-10">Jul 10, 2023</time><span aria-hidden="true">·</span><span>Engineering</span><span aria-hidden="true">·</span><span>4 min read</span></p>
+      <h2 class="post__title"><a class="post__link" href="https://hustledata.substack.com/p/python-development-best-practices" rel="noopener">Python Development Best Practices: Virtual Environments and requirements.txt<svg class="icon post__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></h2>
+      <p class="post__excerpt">Why isolated environments and pinned dependencies keep Python projects from breaking.</p>
+    </li>
+    <li class="post">
+      <p class="post__meta"><time datetime="2023-07-01">Jul 1, 2023</time><span aria-hidden="true">·</span><span>Data Science</span><span aria-hidden="true">·</span><span>11 min read</span></p>
+      <h2 class="post__title"><a class="post__link" href="https://hustledata.substack.com/p/from-underdog-to-top-contender-how" rel="noopener">From Underdog to Top Contender: How I Surpassed 76% of Teams on Kaggle<svg class="icon post__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></h2>
+      <p class="post__excerpt">A write-up of the GoDaddy microbusiness density forecasting competition: the data, the models and what worked.</p>
+    </li>
+    <li class="post">
+      <p class="post__meta"><time datetime="2023-06-22">Jun 22, 2023</time><span aria-hidden="true">·</span><span>Engineering</span><span aria-hidden="true">·</span><span>4 min read</span></p>
+      <h2 class="post__title"><a class="post__link" href="https://hustledata.substack.com/p/unleashing-the-power-of-dask-conquer" rel="noopener">Unleashing the Power of Dask: Conquer Data at Lightning Speed!<svg class="icon post__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></h2>
+      <p class="post__excerpt">Using Dask for data preprocessing and manipulation when a dataset outgrows pandas.</p>
+    </li></ol>
+      </div>
+  </div>
+</section>
+</main>
+
+<section class="contact" id="contact" aria-labelledby="contact-title" data-contact>
+  <div class="container contact__inner">
+    <div class="contact__text">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title" class="contact__title">Have something interesting in mind?</h2>
+      <p class="contact__lead">I’m always interested in thoughtful collaborations, interesting research problems, and opportunities to build useful things.</p>
+      <ul class="contact__links">
+        <li><a class="btn btn--primary" href="mailto:sudhanshumukherjee@proton.me"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>sudhanshumukherjee@proton.me</a></li>
+        <li><a class="btn btn--ghost" href="https://github.com/sudhanshumukherjeexx" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>GitHub</a></li>
+        <li><a class="btn btn--ghost" href="https://www.linkedin.com/in/sudhanshumukherjeexx/" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a></li>
+        <li><a class="btn btn--ghost" href="/pages/sudhanshu_mukherjee_resume.pdf"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>Résumé <span class="btn__meta">PDF</span></a></li>
+      </ul>
+    </div>
+    <div class="contact__bit" aria-hidden="true" data-bit-wave><svg class="bit bit--contact" viewBox="0 0 130 96" aria-hidden="true" focusable="false" data-state="idle" shape-rendering="crispEdges">
+  <g class="bit__bob">
+    <g class="bit__legs">
+      <rect class="bit__leg bit__leg--a" x="15" y="68" width="10" height="27"/>
+      <rect class="bit__leg bit__leg--b" x="35" y="68" width="10" height="27"/>
+      <rect class="bit__leg bit__leg--a" x="85" y="68" width="10" height="27"/>
+      <rect class="bit__leg bit__leg--b" x="105" y="68" width="10" height="27"/>
+    </g>
+    <rect class="bit__arm bit__arm--l" x="1" y="23" width="15" height="27"/>
+    <rect class="bit__arm bit__arm--r" x="114" y="23" width="15" height="27"/>
+    <rect class="bit__body" x="15" y="0" width="100" height="70"/>
+    <g class="bit__open">
+      <g class="bit__eyes">
+        <rect class="bit__eye" x="25" y="24" width="10" height="12"/>
+        <rect class="bit__eye" x="95" y="24" width="10" height="12"/>
+      </g>
+    </g>
+    <g class="bit__closed">
+      <rect x="23" y="32" width="14" height="4"/>
+      <rect x="93" y="32" width="14" height="4"/>
+    </g>
+    <g class="bit__zzz">
+      <path d="M120 -22h10v3l-7 7h7v3h-10v-3l7-7h-7z"/>
+      <path d="M134 -34h7v2l-5 5h5v2h-7v-2l5-5h-5z"/>
+    </g>
+  </g>
+</svg></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__quote"><a href="https://en.wikipedia.org/wiki/Ars_longa,_vita_brevis" rel="noopener"><i lang="la">Ars longa, vita brevis.</i></a></p>
+    <ul class="site-footer__links">
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/writing/">Writing</a></li>
+      <li><a href="https://hustledata.substack.com/" rel="noopener">Hustle Data newsletter</a></li>
+    </ul>
+    <p class="site-footer__fine">© 2026 Sudhanshu Mukherjee. Hand-built, statically generated, served by GitHub Pages.</p>
+  </div>
+</footer>
+<template id="bit-companion"><div class="companion" aria-hidden="true"><svg class="bit bit--small" viewBox="0 0 130 96" aria-hidden="true" focusable="false" data-state="idle" shape-rendering="crispEdges">
+  <g class="bit__bob">
+    <g class="bit__legs">
+      <rect class="bit__leg bit__leg--a" x="15" y="68" width="10" height="27"/>
+      <rect class="bit__leg bit__leg--b" x="35" y="68" width="10" height="27"/>
+      <rect class="bit__leg bit__leg--a" x="85" y="68" width="10" height="27"/>
+      <rect class="bit__leg bit__leg--b" x="105" y="68" width="10" height="27"/>
+    </g>
+    <rect class="bit__arm bit__arm--l" x="1" y="23" width="15" height="27"/>
+    <rect class="bit__arm bit__arm--r" x="114" y="23" width="15" height="27"/>
+    <rect class="bit__body" x="15" y="0" width="100" height="70"/>
+    <g class="bit__open">
+      <g class="bit__eyes">
+        <rect class="bit__eye" x="25" y="24" width="10" height="12"/>
+        <rect class="bit__eye" x="95" y="24" width="10" height="12"/>
+      </g>
+    </g>
+    <g class="bit__closed">
+      <rect x="23" y="32" width="14" height="4"/>
+      <rect x="93" y="32" width="14" height="4"/>
+    </g>
+    <g class="bit__zzz">
+      <path d="M120 -22h10v3l-7 7h7v3h-10v-3l7-7h-7z"/>
+      <path d="M134 -34h7v2l-5 5h5v2h-7v-2l5-5h-5z"/>
+    </g>
+  </g>
+</svg></div></template>
+<div class="visually-hidden" aria-live="polite" data-announcer></div>
+</body>
+</html>

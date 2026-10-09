@@ -1,0 +1,26 @@
+# Dependencies (dev tooling only; reinstall with `npm install`)
+node_modules/
+
+# Private working notes — never published
+CONTENT-TODO.md
+*.local.md
+notes/
+
+# Secrets and local config
+.env
+.env.*
+
+# Logs and test output
+*.log
+npm-debug.log*
+lighthouse*/
+test-results/
+playwright-report/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,27 @@
+name: Check site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Built files are committed
+        run: git diff --exit-code -- . ':!sitemap.xml' || (echo "Run 'npm run build' and commit the output." && exit 1)
+      - name: Static checks
+        run: npm run check
+      - name: Browser checks
+        run: npm run test:browser
+        env:
+          BROWSER_CHANNEL: chrome

@@ -1,0 +1,21 @@
+{
+  "name": "sudhanshumukherjee-portfolio",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Personal portfolio of Sudhanshu Mukherjee, statically generated and served by GitHub Pages.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "test:browser": "node scripts/browser-test.mjs",
+    "test": "npm run build && npm run check && npm run test:browser"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "playwright-core": "^1.64.0"
+  }
+}
